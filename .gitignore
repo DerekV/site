@@ -1,4 +1,10 @@
 
+### hakyll
+
+_cache
+_site
+
+
 ### haskell https://github.com/github/gitignore.git
 
 dist
