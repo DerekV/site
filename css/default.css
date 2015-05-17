@@ -1,42 +1,54 @@
 body {
     background-color: #b5dbca;
     color: #234;
-    //background-color: #234;
-    //color: #b5dbca;
+    background:
+    linear-gradient( rgba(171, 209, 192, .75),
+                     rgba(171, 209, 192, .60),
+                     rgba(171, 209, 192, .75)
+                   ),
+    url(/images/45degreee_fabric_@2X.png);
 
     font-family: Verdana,Geneva,sans-serif;
-    margin: 0px auto 0px auto;
-    width: 600px;
+    margin: 5px auto 5px auto;
 }
 
+/* future possibility: 5e5c70 (purple) with tweed */
+
 a {
-    //color: #dd9;
     color: #557
 }
 
-div#header {
-    border-bottom: 2px solid black;
-    margin-bottom: 30px;
-    padding: 12px 0px 12px 0px;
-}
-
-div#logo a {
-    float: left;
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none;
-}
-
 div#header #navigation {
-    text-align: right;
+    margin: 1em;
 }
 
 div#header #navigation a {
     font-size: 18px;
     font-weight: bold;
-    margin-left: 12px;
     text-decoration: none;
-    text-transform: uppercase;
+}
+
+div#content {
+    margin: 2em;
+    padding: 3px;
+}
+
+div .sub-item {
+    text-indent: 1em;
+}
+
+@media screen and (min-width: 640px) {
+    div#header {
+        position: fixed;
+        width: 10em;
+        top: 0;
+        left: 0;
+    }
+
+
+    div#content {
+        margin-left: 10em;
+    }
 }
 
 div#footer {
@@ -46,8 +58,8 @@ div#footer {
     padding: 12px 0px 12px 0px;
     text-align: right;
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 1px;
+    right: 1em;
 }
 
 h1 {
