@@ -31,6 +31,8 @@ div#header #navigation a {
 div#content {
     margin: 2em;
     padding: 3px;
+    min-width: 20em;
+    max-width: 33em;
 }
 
 div .sub-item {
